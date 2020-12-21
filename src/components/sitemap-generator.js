@@ -3,7 +3,7 @@ require("isomorphic-fetch");
 let slugs = [];
 
 function getData() {
-  fetch("https://craft.leightonv.co.nz/api", {
+  fetch("http://139.180.169.89:81/api", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({
@@ -55,7 +55,7 @@ function generateSitemap() {
   };
   return new Sitemap(router())
     .applyParams(pathsConfig)
-    .build("https://www.leightonv.co.nz")
+    .build("http://139.180.169.89")
     .save("./public/sitemap.xml");
 }
 
