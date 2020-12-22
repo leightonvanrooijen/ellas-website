@@ -4,7 +4,7 @@ import Grid from "@material-ui/core/Grid";
 import Paper from "@material-ui/core/Paper";
 import Typography from "@material-ui/core/Typography";
 import { makeStyles } from "@material-ui/core/styles";
-import Mountians from "../../assets/img-home.jpg";
+import Mountians from "../../assets/BallsDeepLong.jpg";
 import Grow from '@material-ui/core/Grow';
 
 const useStyles = makeStyles((theme) => ({
@@ -14,14 +14,15 @@ const useStyles = makeStyles((theme) => ({
     
   },
   imageGrid: {
-    height: "35vh",
+    height: "40vh",
     overflow: "hidden",
     backgroundImage: `url(${Mountians})`,
+    backgroundSize: "100%",
     display: 'flex'
   },
   text: {
     margin: 'auto',
-    color: '#ffffff',
+    
     [theme.breakpoints.down("xs")]: {
       fontSize: 34,
     },

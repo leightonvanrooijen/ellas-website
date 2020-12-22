@@ -10,9 +10,9 @@ import ListItem from "@material-ui/core/ListItem";
 import ListItemIcon from "@material-ui/core/ListItemIcon";
 import ListItemText from "@material-ui/core/ListItemText";
 import HomeIcon from "@material-ui/icons/Home";
-import GavelIcon from "@material-ui/icons/Gavel";
+// import PermContactCalendarIcon from "@material-ui/icons/PermContactCalendar";
+// import GavelIcon from "@material-ui/icons/Gavel";
 import CreateIcon from "@material-ui/icons/Create";
-import PermContactCalendarIcon from "@material-ui/icons/PermContactCalendar";
 import IconButton from "@material-ui/core/IconButton";
 import MenuIcon from "@material-ui/icons/Menu";
 import Typography from "@material-ui/core/Typography";
@@ -46,9 +46,7 @@ const useStyles = makeStyles((theme) => ({
 
 const barButtons = [
   { text: "Home", icon: <HomeIcon />, route: "/" },
-  { text: "Projects", icon: <GavelIcon />, route: "/projects" },
   { text: "Blog", icon: <CreateIcon />, route: "/blog" },
-  { text: "Contact", icon: <PermContactCalendarIcon />, route: "/contact" },
 ];
 
 export default function MobileDrawer(props) {

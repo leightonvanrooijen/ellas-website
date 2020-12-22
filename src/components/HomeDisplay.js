@@ -6,7 +6,6 @@ import Typography from "@material-ui/core/Typography";
 import WebsiteGrid from "./WebsiteGrid";
 import { makeStyles } from "@material-ui/core/styles";
 import Loading from './Loading'
-import Ear from "../assets/ear.png";
 
 const useStyles = makeStyles({
   root: {},
@@ -72,9 +71,6 @@ export default function HomeDisplay() {
 
   return (
     <WebsiteGrid size={6} align={"center"}>
-      <Grid item>
-        <img className={classes.earImage} alt="ear listening"src={Ear} />
-      </Grid>
       <Grid item xs={12}>
         <Typography variant="h3">{data.entry.title}</Typography>
       </Grid>
